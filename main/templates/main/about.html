@@ -1,298 +1,313 @@
-﻿<!DOCTYPE HTML>
+﻿{% load static %}
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>About</title>
-<!---css--->
-<link href="/main/static/main/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/main/static/main/css/style.css" rel='stylesheet' type='text/css' />
-<!---css--->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!---js--->
-<script src="/main/static/main/js/jquery-1.11.1.min.js"></script>
-<script src="/main/static/main/js/bootstrap.js"></script>
-<!---js--->
-<!--web-fonts-->
-<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-<!--//web-fonts-->
-<!--JS for animate-->
-	<link href="/main/static/main/css/animate.css" rel="stylesheet" type="text/css" media="all">
-	<script src="/main/static/main/js/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-	<!--//end-animate-->
+    <title>About</title>
+    <!---css--->
+    <link href="{% static "main/css/bootstrap.css" %}" rel='stylesheet' type='text/css'/>
+    <link href="{% static "main/css/style.css" %}" rel='stylesheet' type='text/css'/>
+    <!---css--->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!---js--->
+    <script src="{% static "main/js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "main/js/bootstrap.js" %}"></script>
+    <!---js--->
+    <!--web-fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic'
+          rel='stylesheet' type='text/css'>
+    <!--//web-fonts-->
+    <!--JS for animate-->
+    <link href="{% static "main/css/animate.css" %}" rel="stylesheet" type="text/css" media="all">
+    <script src="{% static "main/js/wow.min.js" %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
 </head>
 <body>
 <!---header--->
-	<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header wow fadeInLeft animated animated" data-wow-delay="0.4s">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         <h2><a class="navbar-brand" href="index"><img src="images/e.png"/>基于行人重识别技术的行人轨迹分析及其可视化</a></h2>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h2><a class="navbar-brand" href="/main/index"><img src="{% static "main/images/e.png" %}"/>基于行人重识别技术的行人轨迹分析及其可视化</a></h2>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right wow fadeInRight animated animated" data-wow-delay="0.4s">
-                <li class="active"><a class="nav-in" href=""><span data-letters="Home">主页</span></a></li>
-                <li><a class="nav-in" href="/main/about/"><span data-letters="About">关于我们</span></a></li>
+            <ul class="nav navbar-nav navbar-right wow fadeInRight animated animated" data-wow-delay="0.4s">
+                <li class="active"><a class="nav-in" href="/main/index"><span data-letters="Home">Home</span></a></li>
+                <li><a class="nav-in" href="/main/about/"><span data-letters="About us">About us</span></a></li>
                 <li><a class="nav-in" href="/main/class/"><span data-letters="Classes">Classes</span></a></li>
                 <li><a class="nav-in" href="/main/trainers"><span data-letters="Trainers">Trainers</span></a></li>
                 <li><a class="nav-in" href="/main/codes"><span data-letters="Codes">Codes</span></a></li>
                 <li><a class="nav-in" href="/main/contact"><span data-letters="Contact">Contact</span></a></li>
 
-          </ul>
+            </ul>
         </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    </div>
+</nav>
 <!---banner--->
-			<div class="banner wow fadeInDownBig animated animated" data-wow-delay="0.4s">
-				<div class="container">
-					<h2>about us</h2>
-				</div>
-			</div>
-		<!---about-->
-			<div class="about-section w3-layouts">
-				<div class="container">
-					<div class="about-grids">
-						<div class="col-md-4 about-grid1 wow fadeInLeft animated animated" data-wow-delay="0.4s">
-							<div class="latest-top">
-								<h4>Latest Classes</h4>
-								<div class="latest-class">
-									<div class="latest-left">
-									<img src="images/l1.jpg" class="img-responsive" alt=""/>
-									</div>
-									<div class="latest-right">
-										<h5>Running</h5>
-										<p>March 5, 2016</p>
-										<p>10:00 am - 11:00 am</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="latest-class">
-									<div class="latest-left">
-									<img src="images/l2.jpg" class="img-responsive" alt=""/>
-									</div>
-									<div class="latest-right">
-										<h5>Weight Loss </h5>
-										<p>March 5, 2016</p>
-										<p>10:00 am - 11:00 am</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="latest-class">
-									<div class="latest-left">
-									<img src="images/l3.jpg" class="img-responsive" alt=""/>
-									</div>
-									<div class="latest-right">
-										<h5>Bodybuilding</h5>
-										<p>March 5, 2016</p>
-										<p>10:00 am - 11:00 am</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="time w3l">
-								<h4>Club Timings</h4>
-								<div class="time-bottom">
-									<div class="time-left">
-										<h5>Week Days : </h5>
-									</div>
-									<div class="time-right">
-										<h5> 04:00 – 22:00 </h5>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="time-bottom">
-									<div class="time-left">
-										<h5>Saturday : </h5>
-									</div>
-									<div class="time-right">
-										<h5> 07:00 – 17:00 </h5>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="time-bottom">
-									<div class="time-left">
-										<h5>Sunday : </h5>
-									</div>
-									<div class="time-right">
-										<h5> Closed </h5>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="help-line w3l">
-								<h4>24hrs Helpline</h4>
-								<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Aliquam erat volutpat. Ut augue dui</p>
-								<ul class="details">
-									<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
-									<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-8 about-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
-							<h4>项目成员简介 </h4>
-							<p><strong>项目负责人</strong>：<br>
-                                <strong >苏可欣</strong>:<br>
-                                ●	熟练掌握C/C++，Java，Python，MySQL，等专业知识。<br>
-                                ●	代码经验丰富，动手能力强。在大一小学期和各个实践课程中多次担任组内项目负责人。<br>
-                                ●	学习能力较强，在2016-2017曾获国家奖学金。<br>
-                                ●	具有较好的组织协调能力，曾被评为校级“三好学生”。<br>
-                                ●	主要负责网络训练测试和协作开发平台。
-                            </p>
-                            <p>
-                                <strong>指导教师</strong>：<br>
-                                <strong>吴国仕</strong>：<br>
-                                ●	国家自然科学基金重点项目，面向不确定性的Web2.0用户创作内容管理研究。
-                                ●	中国电信北京研究院，大数据应用开发项目一期、二期。
-                                ●	企业合作项目——卓望集团，《电信文本数据智能处理系统》的研究与开发。
-                                ●	中国移动集团，基于质量功能展开（QFD）模型的海量互联网评论分析技术研究。
+<div class="banner wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+    <div class="container">
+        <h2>about us</h2>
+    </div>
+</div>
+<!---about-->
+<div class="about-section w3-layouts">
+    <div class="container">
+        <div class="about-grids">
+            <div class="col-md-4 about-grid1 wow fadeInLeft animated animated" data-wow-delay="0.4s">
+                <div class="latest-top">
+                    <h4>Latest Classes</h4>
+                    <div class="latest-class">
+                        <div class="latest-left">
+                            <img src="{% static "main/images/l1.jpg" %}" class="img-responsive" alt=""/>
+                        </div>
+                        <div class="latest-right">
+                            <h5>Running</h5>
+                            <p>March 5, 2016</p>
+                            <p>10:00 am - 11:00 am</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="latest-class">
+                        <div class="latest-left">
+                            <img src="{% static "main/images/" %}l2.jpg"  class="img-responsive" alt=""/>
+                        </div>
+                        <div class="latest-right">
+                            <h5>Weight Loss </h5>
+                            <p>March 5, 2016</p>
+                            <p>10:00 am - 11:00 am</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="latest-class">
+                        <div class="latest-left">
+                            <img src="{% static "main/images/a1.jpg" %}" class="img-responsive" alt=""/>
+                        </div>
+                        <div class="latest-right">
+                            <h5>Bodybuilding</h5>
+                            <p>March 5, 2016</p>
+                            <p>10:00 am - 11:00 am</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="time w3l">
+                    <h4>Club Timings</h4>
+                    <div class="time-bottom">
+                        <div class="time-left">
+                            <h5>Week Days : </h5>
+                        </div>
+                        <div class="time-right">
+                            <h5> 04:00 – 22:00 </h5>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="time-bottom">
+                        <div class="time-left">
+                            <h5>Saturday : </h5>
+                        </div>
+                        <div class="time-right">
+                            <h5> 07:00 – 17:00 </h5>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="time-bottom">
+                        <div class="time-left">
+                            <h5>Sunday : </h5>
+                        </div>
+                        <div class="time-right">
+                            <h5> Closed </h5>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="help-line w3l">
+                    <h4>24hrs Helpline</h4>
+                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Aliquam erat volutpat. Ut
+                        augue dui</p>
+                    <ul class="details">
+                        <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+                        <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 about-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
+                <h4>项目成员简介 </h4>
+                <p><strong>项目负责人</strong>：<br>
+                    <strong>苏可欣</strong>:<br>
+                    ● 熟练掌握C/C++，Java，Python，MySQL，等专业知识。<br>
+                    ● 代码经验丰富，动手能力强。在大一小学期和各个实践课程中多次担任组内项目负责人。<br>
+                    ● 学习能力较强，在2016-2017曾获国家奖学金。<br>
+                    ● 具有较好的组织协调能力，曾被评为校级“三好学生”。<br>
+                    ● 主要负责网络训练测试和协作开发平台。
+                </p>
+                <p>
+                    <strong>指导教师</strong>：<br>
+                    <strong>吴国仕</strong>：<br>
+                    ● 国家自然科学基金重点项目，面向不确定性的Web2.0用户创作内容管理研究。
+                    ● 中国电信北京研究院，大数据应用开发项目一期、二期。
+                    ● 企业合作项目——卓望集团，《电信文本数据智能处理系统》的研究与开发。
+                    ● 中国移动集团，基于质量功能展开（QFD）模型的海量互联网评论分析技术研究。
 
-                            </p>
-							
-							<div class="about-bottom">
-								<div class="about-left">
-                                    <p>
-                                        <strong>组员</strong>：<br>
-                                        <strong>马哲</strong>：<br>
-                                        ●	了解并掌握C/C++，Java和Python等程序语言。<br>
-                                        ●	初步掌握数据库的使用方法，掌握数据结构等基本计算机知识。<br>
-                                        ●	了解神经网络原理，能够使用tensorflow, Caffe等框架搭建神经网络并训练。<br>
-                                        ●	主要负责端到端的神经网络的解决方案。<br>
-                                        <strong>王子妍</strong>：<br>
-                                        ●	掌握C/C++，Java, Python等编程语言。<br>
-                                        ●	掌握数据结构及算法知识。<br>
-                                        ●	有一定的自主学习能力与团队合作精神，在2016-2017年度获得学校一等奖学金，担任软件学院公关部副部长及2班管理团队负责人，2016-2017校级“三好学生”。<br>
-                                        ●	主要负责行人检测与存储检测到的行人。<br>
-                                        <strong>孙浩</strong>：<br>
-                                        ●	熟练掌握C/C++, Java , python等编程语言<br>
-                                        ●	熟悉计算机体系结构，操作系统<br>
-                                        ●	熟悉深度学习主流框架如：Caffe,  tensorflow等<br>
-                                        ●	课业成绩优秀，曾获企业奖学金<br>
-                                        ●	主要负责项目内端到端识别网络设计与训练<br>
-                                        <strong>兰宇时</strong>：<br>
-                                        ●	熟悉Java，C/C++，MySQL，HTML等编程语言<br>
-                                        ●	有一定的自主学习能力与团队合作精神，在2016-2017年度获得奖学金，文体积极分子<br>
-                                        ●	主要负责网络训练测试和协作开发平台。<br>
-                                    </p>
-								</div>
-								<div class="about-right">
-									<img src="images/a1.jpg" class="img-responsive" alt=""/>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="few-words">
-								<div class="col-md-4 few-grid">
-									<img src="images/f5.jpg" class="img-responsive" alt=""/>
-									<h5>consectetuer</h5>
-									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </span>
-								</div>
-								<div class="col-md-4 few-grid">
-									<img src="images/f6.jpg" class="img-responsive" alt=""/>
-									<h5>adipiscing</h5>
-									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </span>
-								</div>
-								<div class="col-md-4 few-grid">
-									<img src="images/f7.jpg" class="img-responsive" alt=""/>
-									<h5>consectetuer</h5>
-									<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </span>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<div class="gym-product w3-agile">
-				<div class="container">
-					<h3>Products of gym</h3>
-					<div class="product-grids">
-						<div class="col-md-4 product-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
-							<img src="images/p1.jpg" class="img-responsive" alt=""/>
-							<h4>consectetuer adipiscing </h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </p>
-						</div>
-						<div class="col-md-4 product-grid wow fadeInUpBig animated animated" data-wow-delay="0.4s">
-							<img src="images/p2.jpg" class="img-responsive" alt=""/>
-						<h4>consectetuer adipiscing </h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </p>
-						</div>
-						<div class="col-md-4 product-grid wow fadeInLeft animated animated" data-wow-delay="0.4s">
-							<img src="images/p3.jpg" class="img-responsive" alt=""/>
-							<h4>consectetuer adipiscing </h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		<!---about-->
+                </p>
+
+                <div class="about-bottom">
+                    <div class="about-left">
+                        <p>
+                            <strong>组员</strong>：<br>
+                            <strong>马哲</strong>：<br>
+                            ● 了解并掌握C/C++，Java和Python等程序语言。<br>
+                            ● 初步掌握数据库的使用方法，掌握数据结构等基本计算机知识。<br>
+                            ● 了解神经网络原理，能够使用tensorflow, Caffe等框架搭建神经网络并训练。<br>
+                            ● 主要负责端到端的神经网络的解决方案。<br>
+                            <strong>王子妍</strong>：<br>
+                            ● 掌握C/C++，Java, Python等编程语言。<br>
+                            ● 掌握数据结构及算法知识。<br>
+                            ● 有一定的自主学习能力与团队合作精神，在2016-2017年度获得学校一等奖学金，担任软件学院公关部副部长及2班管理团队负责人，2016-2017校级“三好学生”。<br>
+                            ● 主要负责行人检测与存储检测到的行人。<br>
+                            <strong>孙浩</strong>：<br>
+                            ● 熟练掌握C/C++, Java , python等编程语言<br>
+                            ● 熟悉计算机体系结构，操作系统<br>
+                            ● 熟悉深度学习主流框架如：Caffe, tensorflow等<br>
+                            ● 课业成绩优秀，曾获企业奖学金<br>
+                            ● 主要负责项目内端到端识别网络设计与训练<br>
+                            <strong>兰宇时</strong>：<br>
+                            ● 熟悉Java，C/C++，MySQL，HTML等编程语言<br>
+                            ● 有一定的自主学习能力与团队合作精神，在2016-2017年度获得奖学金，文体积极分子<br>
+                            ● 主要负责网络训练测试和协作开发平台。<br>
+                        </p>
+                    </div>
+                    <div class="about-right">
+                        <img src="{% static "main/images/a1.jpg" %}" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="few-words">
+                    <div class="col-md-4 few-grid">
+                        <img src="{% static "main/images/f5.jpg" %}" class="img-responsive" alt=""/>
+                        <h5>consectetuer</h5>
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </span>
+                    </div>
+                    <div class="col-md-4 few-grid">
+                        <img src="{% static "main/images/f6.jpg" %}" class="img-responsive" alt=""/>
+                        <h5>adipiscing</h5>
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </span>
+                    </div>
+                    <div class="col-md-4 few-grid">
+                        <img src="{% static "main/images/f7.jpg" %}" class="img-responsive" alt=""/>
+                        <h5>consectetuer</h5>
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit  pretium quis, sem. Aliquam  volutpat. </span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="gym-product w3-agile">
+    <div class="container">
+        <h3>Products of gym</h3>
+        <div class="product-grids">
+            <div class="col-md-4 product-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
+                <img src="{% static "main/images/p1.jpg" %}" class="img-responsive" alt=""/>
+                <h4>consectetuer adipiscing </h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit pretium quis, sem. Aliquam volutpat. </p>
+            </div>
+            <div class="col-md-4 product-grid wow fadeInUpBig animated animated" data-wow-delay="0.4s">
+                <img src="{% static "main/images/p2.jpg" %}" class="img-responsive" alt=""/>
+                <h4>consectetuer adipiscing </h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit pretium quis, sem. Aliquam volutpat. </p>
+            </div>
+            <div class="col-md-4 product-grid wow fadeInLeft animated animated" data-wow-delay="0.4s">
+                <img src="{% static "main/images/p3.jpg" %}" class="img-responsive" alt=""/>
+                <h4>consectetuer adipiscing </h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit pretium quis, sem. Aliquam volutpat. </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!---about-->
 <!---footer--->
-		<div class="footer-section">
-			<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-3 footer-grid wow fadeInDownBig animated animated" data-wow-delay="0.4s">
-					<h4>About</h4>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipig elit. Praesent vestibulummolestie lacus. Aenean nonummy hendrerit mauris. Praesent vestibulummolestie lacus.</p>
-				</div>
-				<div class="col-md-3 footer-grid wow fadeInLeft animated animated" data-wow-delay="0.4s">
-					<h4>Categories</h4>
-					<ul>
-						<li>Beauty</li>
-						<li>Diet & Fitness</li>
-						<li>Lifestyle</li>
-						<li>Help Desk</li>
-						<li>Pregnancy</li>
-						<li>Performance Metrics</li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid wow fadeInUpBig animated animated" data-wow-delay="0.4s">
-				<h4>Work</h4>
-					<ul>
-						<li>Customer Support</li>
-						<li>Platinum Support</li>
-						<li>Gold Support</li>
-						<li>Training</li>
-						<li>Workshops</li>
-						<li>Online Training</li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
-					<h4>Contact</h4>
-					<p>7801 Marmora Road</p>
-					<p>Glasgow, DO5 98GR.</p>
-					<p>Freephone: +1 800 558 8990</p>
-					<p>Telephone: +1 659 803 9035</p>
-					<p>FAX: + 1 314 889 9898</p>
-					<a href="mailto:example@mail.com"> example@mail.com</a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			</div>
-		</div>	
-	<!---footer--->
-	<!--copy-->
-	<div class="copy-section wow fadeInDownBig animated animated" data-wow-delay="0.4s">
-		<div class="container">
-				<div class="social-icons">
-					<a href="#"><i class="icon"></i></a>
-					<a href="#"><i class="icon1"></i></a>
-					<a href="#"><i class="icon2"></i></a>
-					<a href="#"><i class="icon3"></i></a>
-				</div>
-			<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-		</div>
-	</div>
-	<!--copy-->
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-3 footer-grid wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+                <h4>About</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipig elit. Praesent vestibulummolestie lacus. Aenean
+                    nonummy hendrerit mauris. Praesent vestibulummolestie lacus.</p>
+            </div>
+            <div class="col-md-3 footer-grid wow fadeInLeft animated animated" data-wow-delay="0.4s">
+                <h4>Categories</h4>
+                <ul>
+                    <li>Beauty</li>
+                    <li>Diet & Fitness</li>
+                    <li>Lifestyle</li>
+                    <li>Help Desk</li>
+                    <li>Pregnancy</li>
+                    <li>Performance Metrics</li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid wow fadeInUpBig animated animated" data-wow-delay="0.4s">
+                <h4>Work</h4>
+                <ul>
+                    <li>Customer Support</li>
+                    <li>Platinum Support</li>
+                    <li>Gold Support</li>
+                    <li>Training</li>
+                    <li>Workshops</li>
+                    <li>Online Training</li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid wow fadeInRight animated animated" data-wow-delay="0.4s">
+                <h4>Contact</h4>
+                <p>7801 Marmora Road</p>
+                <p>Glasgow, DO5 98GR.</p>
+                <p>Freephone: +1 800 558 8990</p>
+                <p>Telephone: +1 659 803 9035</p>
+                <p>FAX: + 1 314 889 9898</p>
+                <a href="mailto:example@mail.com"> example@mail.com</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!---footer--->
+<!--copy-->
+<div class="copy-section wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+    <div class="container">
+        <div class="social-icons">
+            <a href="#"><i class="icon"></i></a>
+            <a href="#"><i class="icon1"></i></a>
+            <a href="#"><i class="icon2"></i></a>
+            <a href="#"><i class="icon3"></i></a>
+        </div>
+        <p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/"
+                                                                                    target="_blank"
+                                                                                    title="模板之家">模板之家</a> - Collect from
+            <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+    </div>
+</div>
+<!--copy-->
 </body>
 </html>

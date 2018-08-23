@@ -4,7 +4,7 @@ from django.urls import path
 
 urlpatterns = [
 	path('', index),
-	path('index/',index),
+	path('index/', index),
 	path('about/', about),
 	path('create/', create_blog_post),
 	path('download/', file_down),
