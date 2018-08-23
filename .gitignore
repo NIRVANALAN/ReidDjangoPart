@@ -3,12 +3,12 @@
 .vscode/
 =======
 >>>>>>> github-master
-blog/__pycache__/
-blog/migrations/__pycache__/
+main/templates/main/__pycache__/
+main/templates/main/migrations/__pycache__/
 mysite2/__pycache__/urls.cpython-36.pyc
 mysite2/__pycache__/wsgi.cpython-36.pyc
 
-#blog/static/
+#main/static/
 #collected_static/
 Media/
-media/
+
