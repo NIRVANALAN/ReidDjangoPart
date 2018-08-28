@@ -1,7 +1,8 @@
 from django.shortcuts import render, render_to_response
 from django.template import loader, Context
 from django.http import HttpResponse, HttpResponseRedirect, FileResponse
-from main.models import BlogPost, blogPostToForm, UserForm, Media
+# from main.models import BlogPost, blogPostToForm, UserForm, Media
+from main.models import UserForm, Media
 from datetime import datetime
 from django.http import StreamingHttpResponse
 from django.views.generic import TemplateView
@@ -32,9 +33,9 @@ def codes(request):
 	return render(request, "main/codes.html")
 
 
-def blog_index(request):
-	blog_list = BlogPost.objects.all()[:5]
-	return render(request, 'main/blog_index.html', {'blog_list': blog_list, 'form': blogPostToForm})
+# def blog_index(request):
+# 	blog_list = BlogPost.objects.all()[:5]
+# 	return render(request, 'main/blog_index.html', {'blog_list': blog_list, 'form': blogPostToForm})
 
 
 # archive = lambda req: render_to_response('index.html', {'blog_list': BlogPost.objects.all()[:5]})

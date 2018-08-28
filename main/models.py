@@ -8,7 +8,7 @@ class Media(models.Model):
 	img = models.ImageField(upload_to='img')
 	video = models.FileField(upload_to='video')  # Not static file now
 	time = models.DateTimeField()
-	
+
 	def __unicode__(self):  ##
 		return self.username
 
@@ -19,19 +19,19 @@ class UserForm(forms.ModelForm):
 		exclude = ('time',)
 
 
-class BlogPost(models.Model):
-	title = models.CharField(max_length=50)
-	body = models.TextField()
-	timestamp = models.DateTimeField()
-	
-	class Meta:
-		ordering = ('-timestamp',)
+# class BlogPost(models.Model):
+# 	title = models.CharField(max_length=50)
+# 	body = models.TextField()
+# 	timestamp = models.DateTimeField()
+#
+# 	class Meta:
+# 		ordering = ('-timestamp',)
 
 
-class blogPostToForm(forms.ModelForm):
-	class Meta:
-		model = BlogPost
-		exclude = ('timestamp',)
+# class blogPostToForm(forms.ModelForm):
+# 	class Meta:
+# 		model = BlogPost
+# 		exclude = ('timestamp',)
 
 
 # class BlogPostForm(forms.Form):
@@ -40,11 +40,11 @@ class blogPostToForm(forms.ModelForm):
 #     timestamp = forms.DateTimeField()
 
 
-class DiaryPost(models.Model):
-	title = models.CharField(max_length=30)
-	participants = models.CharField(max_length=50)
-	body = models.TextField()
-	timestamp = models.DateTimeField()
-	
-	class Meta:
-		ordering = ('-timestamp',)
+# class DiaryPost(models.Model):
+# 	title = models.CharField(max_length=30)
+# 	participants = models.CharField(max_length=50)
+# 	body = models.TextField()
+# 	timestamp = models.DateTimeField()
+#
+# 	class Meta:
+# 		ordering = ('-timestamp',)
